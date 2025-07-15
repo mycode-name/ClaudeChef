@@ -9,7 +9,7 @@ const IngredientsList = (props) => {
             <h2>Ingredients on hand:</h2>
             <ul className="ingredients-list">{ingredientList}</ul>
             {props.ingredients.length>2 && <div className="get-recipe-container">
-                <div>
+                <div ref={props.ref} className="get-recipe-info">
                     <h3>Ready for a recipe</h3>
                     <p>Generate a recipe from your list of ingredients.</p>
                 </div>
